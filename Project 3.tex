@@ -1,0 +1,83 @@
+\documentclass[12pt]{article} 
+\usepackage{amssymb}
+
+\title{Math 3030: Project III} 
+\author{Jason Marcell} 
+\date{April 27th, 2010}
+
+\begin{document} 
+\maketitle 
+\newpage 
+
+\section{Determinants of 2x2 Matrices Consisting only of 0 and 1} The following are the determinants of all possible 2x2 matrices whose entries consist of only 1 or 0. 
+\newline $
+\begin{array}{llll}
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&1 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\1&0 \end{array} \right] = 0\\
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\1&1 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&1\\0&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&1\\0&1 \end{array} \right] = 0\\
+	\mathrm{det} \left[ \begin{array}{cc} 0&1\\1&0 \end{array} \right] = -1&
+	\mathrm{det} \left[ \begin{array}{cc} 0&1\\1&1 \end{array} \right] = -1&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\0&0 \end{array} \right] = 0\\
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\0&1 \end{array} \right] = 1&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&1 \end{array} \right] = 1\\
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\0&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\0&1 \end{array} \right] = 1&
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\1&0 \end{array} \right] = -1\\
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\1&1 \end{array} \right] = 0&
+\end{array}
+$ 
+\subsection{Probabilities} The probabilities of each of the possible values of X are as follows:
+\newline 
+\begin{equation}
+	\begin{array}{ll}
+		P(X=-1) &= 0.1875\\
+		P(X=0) &= 0.625\\
+		P(X=1) &= 0.1875\\
+	\end{array}
+\end{equation}
+\subsection{Key Statistics} The mean $\mu$ is 0.0000 
+\newline The variance $\sigma^2$ is 0.3750 
+\newline The standard deviation $\sigma$ is 0.6124 
+\pagebreak 
+\section{Random} The following are 15 randomly-generated 2x2 matrices with entries consisting only of 1 or 0. 
+\newline $
+\begin{array}{llll}
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\1&0 \end{array} \right] = -1&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&1\\1&1 \end{array} \right] = -1\\
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\1&0 \end{array} \right] = -1\\
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&1 \end{array} \right] = 1&
+	\mathrm{det} \left[ \begin{array}{cc} 1&1\\1&1 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&1 \end{array} \right] = 1\\
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&1 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\1&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&0 \end{array} \right] = 0\\
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&0 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 0&0\\0&1 \end{array} \right] = 0&
+	\mathrm{det} \left[ \begin{array}{cc} 1&0\\0&1 \end{array} \right] = 1\\
+\end{array}
+$ 
+\subsection{Key Statistics} The mean $\bar{x}$ is 0.0000 
+\newline The variance $s^2$ is 0.4286 
+\newline The standard deviation $s$ is 0.6547 
+\subsection{Equations} The following equations are used to calculate the mean, variance, and standard deviation of a set of data: 
+\newline \textbf{mean} 
+\begin{equation}
+	\bar{x} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n} 
+\end{equation}
+\textbf{variance} 
+\begin{equation}
+	s^2 = \frac{((x_{1} - \bar{x})^2 + (x_{2} - \bar{x})^2 + \cdots (x_{n} - \bar{x})^2)}{{n-1}} 
+\end{equation}
+\textbf{standard deviation} 
+\begin{equation}
+	s = \sqrt{s^2} 
+\end{equation}
+\pagebreak
+\subsection{Difference From Ideal Expected Values} The mean, standard deviation, and variance were pretty close to the expected values. The randomly generated matrices had determinants that roughly matched the expected outcome but were not perfect. Thus the statistics from the random data were close but not exactly the same as the statistics from the ideal set of data. \end{document}
